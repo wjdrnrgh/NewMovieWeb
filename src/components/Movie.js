@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Movie = ({ obj }) => {
   return obj.map((movie) => (
     <div key={movie.id}>
-      <img src={movie.medium_cover_image} alt="cover" />
+      <Link to={`/movie/${movie.id}`}>
+        <img src={movie.medium_cover_image} alt="cover" />
+      </Link>
       <h1>{movie.title}</h1>
       <p>{movie.rating}⭐</p>
       <p>{movie.runtime}(min)⏰</p>
@@ -14,6 +18,10 @@ const Movie = ({ obj }) => {
       </ul>
     </div>
   ));
+};
+
+Movie.propTypes = {
+  obj: PropTypes.array.isRequired,
 };
 
 export default Movie;

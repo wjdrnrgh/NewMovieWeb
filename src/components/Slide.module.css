@@ -1,0 +1,9 @@
+.slideContainer {
+  width: 3500px;
+  height: 500px;
+}
+.slideBox {
+  display: inline-block;
+  width: 350px;
+  height: 100%;
+}

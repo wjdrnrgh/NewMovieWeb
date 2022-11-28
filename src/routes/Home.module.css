@@ -1,0 +1,11 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1050px;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
