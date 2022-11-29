@@ -1,11 +1,9 @@
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css";
-
 a {
   text-decoration: none;
 }
 .bottomBar {
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   border-bottom: 2px solid transparent;
 }
 .bottomBar::before {

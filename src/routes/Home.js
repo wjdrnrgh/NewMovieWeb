@@ -36,7 +36,6 @@ const Home = () => {
       )
     ).json();
     setAnimation(gAnimation.data.movies);
-
     SetLoding(false);
   };
   useEffect(() => {
@@ -48,10 +47,10 @@ const Home = () => {
         <Loding />
       ) : (
         <div className={styles.container}>
-          <Slide movies={topRating} />
-          <Slide movies={romance} />
-          <Slide movies={thriller} />
-          <Slide movies={animation} />
+          <Slide movies={topRating} title="Top Rating" />
+          <Slide movies={romance} title="Romance" />
+          <Slide movies={thriller} title="Thriller" />
+          <Slide movies={animation} title="Animation" />
         </div>
       )}
     </div>
