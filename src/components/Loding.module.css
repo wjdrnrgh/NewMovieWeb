@@ -1,0 +1,14 @@
+.container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  z-index: 999;
+}
+.lodingTitle {
+  font-size: 3rem;
+  font-weight: 900;
+}
