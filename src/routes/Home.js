@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Loding from "../components/Loding";
+import Loading from "../components/Loading";
 import Slide from "../components/Slide";
 import styles from "./Home.module.css";
 
@@ -41,13 +41,14 @@ const Home = () => {
   useEffect(() => {
     getMovies();
   }, []);
+
   return (
     <div>
       {loading ? (
-        <Loding />
+        <Loading />
       ) : (
         <div className={styles.container}>
-          <Slide movies={topRating} title="Top Rating" />
+          <Slide movies={topRating} title="High Rating" />
           <Slide movies={romance} title="Romance" />
           <Slide movies={thriller} title="Thriller" />
           <Slide movies={animation} title="Animation" />

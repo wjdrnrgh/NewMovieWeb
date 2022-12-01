@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Loding from "../components/Loding";
+import Loading from "../components/Loading";
 import styles from "./Detail.module.css";
 
 const Detail = () => {
@@ -19,11 +19,10 @@ const Detail = () => {
   useEffect(() => {
     getDetail();
   }, []);
-  console.log(detail);
   return (
     <div>
       {loading ? (
-        <Loding />
+        <Loading />
       ) : (
         <div>
           <div
@@ -60,9 +59,13 @@ const Detail = () => {
                 </div>
                 <div className={styles.infoBottom}>
                   <h1>Download</h1>
-                  {detail.torrents.map((item) => {
+                  {detail.torrents.map((item, index) => {
                     return (
-                      <a className={styles.downloadBtn} href={item.url}>
+                      <a
+                        className={styles.downloadBtn}
+                        href={item.url}
+                        key={index}
+                      >
                         {item.quality}
                       </a>
                     );

@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useRecoilState, useSetRecoilState } from "recoil";
+import { listPageReLoading, focusNav } from "../atom/Atoms";
 import styles from "./Nav.module.css";
 import config from "../config/config.js";
 
 const Nav = () => {
   const [scroll, setScroll] = useState(false);
+  const pageReLoading = useSetRecoilState(listPageReLoading);
+  const [focusPath, setFocusPath] = useRecoilState(focusNav);
+
   let scrollY = 0;
 
   const handelScroll = () => {
@@ -15,6 +20,10 @@ const Nav = () => {
       setScroll(false);
     }
   };
+  const optionOnClick = () => {
+    pageReLoading(true);
+  };
+
   window.addEventListener("scroll", handelScroll);
   return (
     <nav
@@ -22,7 +31,7 @@ const Nav = () => {
       style={scroll ? { backdropFilter: "blur(5px)" } : { backdropFilter: "" }}
     >
       <div>
-        <Link to="/" className={styles.logo}>
+        <Link to="/" className={styles.logo} onClick={() => setFocusPath("")}>
           <i className="fab fa-neos"></i>
           <strong>EWFLIX</strong>
         </Link>
@@ -32,7 +41,8 @@ const Nav = () => {
           return (
             <li key={title}>
               <Link
-                to={`/genre/${path}`}
+                to={`/page/${path}/1`}
+                onClick={focusPath !== path ? optionOnClick : null}
                 className={`${styles.listItem} ${styles.bottomBar}`}
               >
                 {title}

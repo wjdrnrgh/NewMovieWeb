@@ -1,0 +1,12 @@
+.container {
+  height: 100vh;
+  padding-top: 80px;
+}
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

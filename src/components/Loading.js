@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Loding.module.css";
+import styles from "./Loading.module.css";
 
-const Loding = () => {
+const Loading = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.lodingTitle}>Loading...</h1>
@@ -9,4 +9,4 @@ const Loding = () => {
   );
 };
 
-export default Loding;
+export default Loading;
