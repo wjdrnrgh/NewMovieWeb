@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NewMovieWeb/static/css/main.a4274448.css",
-    "main.js": "/NewMovieWeb/static/js/main.dbbbeb23.js",
+    "main.css": "/NewMovieWeb/static/css/main.f15c9fa7.css",
+    "main.js": "/NewMovieWeb/static/js/main.83e8f06b.js",
     "index.html": "/NewMovieWeb/index.html",
-    "main.a4274448.css.map": "/NewMovieWeb/static/css/main.a4274448.css.map",
-    "main.dbbbeb23.js.map": "/NewMovieWeb/static/js/main.dbbbeb23.js.map"
+    "main.f15c9fa7.css.map": "/NewMovieWeb/static/css/main.f15c9fa7.css.map",
+    "main.83e8f06b.js.map": "/NewMovieWeb/static/js/main.83e8f06b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4274448.css",
-    "static/js/main.dbbbeb23.js"
+    "static/css/main.f15c9fa7.css",
+    "static/js/main.83e8f06b.js"
   ]
 }
