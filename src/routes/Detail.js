@@ -33,7 +33,7 @@ const Detail = () => {
           ></div>
           <div className={styles.container}>
             <div className={styles.mainContent}>
-              <div>
+              <div className={styles.imgBox}>
                 <img
                   src={detail.large_cover_image}
                   alt="coverImg"

@@ -18,10 +18,11 @@ const Slide = ({ movies, title }) => {
     }
     setSlidePosition((current) => current + -350);
   };
+
   return (
     <div className={styles.slideContainer}>
       <div className={styles.titleBox}>
-        <Link to="">{title}</Link>
+        <span>{title}</span>
       </div>
       <div className={styles.slideBox}>
         <div

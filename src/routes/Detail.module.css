@@ -17,6 +17,7 @@
   padding: 5rem 2rem 0;
   display: flex;
 }
+
 .coverImg {
   width: 350px;
   height: 500px;
@@ -73,4 +74,33 @@
   font-weight: 600;
   background-color: red;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .mainContent {
+    flex-direction: column;
+    padding: 5rem 0.5rem 0;
+  }
+  .imgBox {
+    text-align: center;
+  }
+  .movieInfo {
+    margin: 2rem 0;
+    padding: 0;
+  }
+  .movieTitle {
+    font-size: 1.25rem;
+  }
+  .subTitle {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  .description {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  .infoTop {
+    text-align: center;
+  }
 }

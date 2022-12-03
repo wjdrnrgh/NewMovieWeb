@@ -8,7 +8,7 @@
   justify-content: center;
   margin-bottom: 3rem;
 }
-.titleBox > a {
+.titleBox > span {
   font-size: 3rem;
   font-weight: 900;
   color: #ffffff;
@@ -40,9 +40,11 @@
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
+  opacity: 0;
+  transition: opacity 0.3s linear, visibility 0.3s linear;
+}
+.movieInfo:hover {
   opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s linear, visibility 0.5s linear;
 }
 .movieTitle {
   font-size: 1.5rem;
