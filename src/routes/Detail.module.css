@@ -24,6 +24,7 @@
   border-radius: 5px;
 }
 .movieInfo {
+  flex: 1;
   position: relative;
   padding-left: 3rem;
   display: flex;
